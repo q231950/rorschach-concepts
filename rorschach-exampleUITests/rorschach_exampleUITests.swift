@@ -10,22 +10,21 @@ import Rorschach
 
 class rorschach_exampleUITests: XCTestCase {
 
-    override func setUpWithError() throws {
-        continueAfterFailure = false
-    }
+    let app = XCUIApplication()
 
     func testExample() throws {
-        let app = XCUIApplication()
+        let firstView = FirstView(app: app)
+        let secondView = SecondView(app: app)
 
         expect {
-            Given("I am on the initial screen") {
-                app.launch()
+            Given {
+                firstView.becomeInitialView()
             }
-            When("I navigate to the second screen") {
-                app.buttons["Navigate to Second View"].tap()
+            When {
+                firstView.navigateToSecondView()
             }
-            Then("I can see the second screen") {
-                XCTAssertTrue(app.staticTexts["Second View"].waitForExistence(timeout: 1))
+            Then {
+                secondView.isVisible()
             }
         }
     }
