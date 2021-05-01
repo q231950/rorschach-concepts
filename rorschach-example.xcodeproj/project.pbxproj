@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		3B8FBF85263D8A190041E7F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8FBF84263D8A190041E7F1 /* Preview Assets.xcassets */; };
 		3B8FBF90263D8A190041E7F1 /* rorschach_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF8F263D8A190041E7F1 /* rorschach_exampleTests.swift */; };
 		3B8FBF9B263D8A190041E7F1 /* rorschach_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF9A263D8A190041E7F1 /* rorschach_exampleUITests.swift */; };
+		3B8FBFAA263D8A6F0041E7F1 /* Rorschach in Frameworks */ = {isa = PBXBuildFile; productRef = 3B8FBFA9263D8A6F0041E7F1 /* Rorschach */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8FBFAA263D8A6F0041E7F1 /* Rorschach in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +184,9 @@
 				3B8FBF98263D8A190041E7F1 /* PBXTargetDependency */,
 			);
 			name = "rorschach-exampleUITests";
+			packageProductDependencies = (
+				3B8FBFA9263D8A6F0041E7F1 /* Rorschach */,
+			);
 			productName = "rorschach-exampleUITests";
 			productReference = 3B8FBF96263D8A190041E7F1 /* rorschach-exampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 3B8FBF71263D8A180041E7F1;
+			packageReferences = (
+				3B8FBFA8263D8A6F0041E7F1 /* XCRemoteSwiftPackageReference "rorschach" */,
+			);
 			productRefGroup = 3B8FBF7B263D8A180041E7F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -574,6 +582,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B8FBFA8263D8A6F0041E7F1 /* XCRemoteSwiftPackageReference "rorschach" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/q231950/rorschach.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B8FBFA9263D8A6F0041E7F1 /* Rorschach */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B8FBFA8263D8A6F0041E7F1 /* XCRemoteSwiftPackageReference "rorschach" */;
+			productName = Rorschach;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B8FBF72263D8A180041E7F1 /* Project object */;
 }
