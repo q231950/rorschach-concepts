@@ -11,7 +11,7 @@ import SwiftUI
 struct rorschach_exampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FirstContentView()
         }
     }
 }

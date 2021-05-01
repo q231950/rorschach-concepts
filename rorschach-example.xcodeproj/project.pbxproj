@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3B8FBF7E263D8A180041E7F1 /* rorschach_exampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF7D263D8A180041E7F1 /* rorschach_exampleApp.swift */; };
-		3B8FBF80263D8A180041E7F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF7F263D8A180041E7F1 /* ContentView.swift */; };
+		3B8FBF80263D8A180041E7F1 /* FirstContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF7F263D8A180041E7F1 /* FirstContentView.swift */; };
 		3B8FBF82263D8A190041E7F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8FBF81263D8A190041E7F1 /* Assets.xcassets */; };
 		3B8FBF85263D8A190041E7F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8FBF84263D8A190041E7F1 /* Preview Assets.xcassets */; };
 		3B8FBF90263D8A190041E7F1 /* rorschach_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF8F263D8A190041E7F1 /* rorschach_exampleTests.swift */; };
 		3B8FBF9B263D8A190041E7F1 /* rorschach_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF9A263D8A190041E7F1 /* rorschach_exampleUITests.swift */; };
 		3B8FBFAA263D8A6F0041E7F1 /* Rorschach in Frameworks */ = {isa = PBXBuildFile; productRef = 3B8FBFA9263D8A6F0041E7F1 /* Rorschach */; };
+		3B8FBFAC263DD41F0041E7F1 /* SecondContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBFAB263DD41F0041E7F1 /* SecondContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		3B8FBF7A263D8A180041E7F1 /* rorschach-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rorschach-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8FBF7D263D8A180041E7F1 /* rorschach_exampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rorschach_exampleApp.swift; sourceTree = "<group>"; };
-		3B8FBF7F263D8A180041E7F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B8FBF7F263D8A180041E7F1 /* FirstContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstContentView.swift; sourceTree = "<group>"; };
 		3B8FBF81263D8A190041E7F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B8FBF84263D8A190041E7F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B8FBF86263D8A190041E7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		3B8FBF96263D8A190041E7F1 /* rorschach-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rorschach-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8FBF9A263D8A190041E7F1 /* rorschach_exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rorschach_exampleUITests.swift; sourceTree = "<group>"; };
 		3B8FBF9C263D8A190041E7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B8FBFAB263DD41F0041E7F1 /* SecondContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				3B8FBF7D263D8A180041E7F1 /* rorschach_exampleApp.swift */,
-				3B8FBF7F263D8A180041E7F1 /* ContentView.swift */,
+				3B8FBF7F263D8A180041E7F1 /* FirstContentView.swift */,
+				3B8FBFAB263DD41F0041E7F1 /* SecondContentView.swift */,
 				3B8FBF81263D8A190041E7F1 /* Assets.xcassets */,
 				3B8FBF86263D8A190041E7F1 /* Info.plist */,
 				3B8FBF83263D8A190041E7F1 /* Preview Content */,
@@ -267,7 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B8FBF80263D8A180041E7F1 /* ContentView.swift in Sources */,
+				3B8FBF80263D8A180041E7F1 /* FirstContentView.swift in Sources */,
+				3B8FBFAC263DD41F0041E7F1 /* SecondContentView.swift in Sources */,
 				3B8FBF7E263D8A180041E7F1 /* rorschach_exampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
