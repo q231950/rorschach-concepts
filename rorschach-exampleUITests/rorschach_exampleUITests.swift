@@ -21,7 +21,7 @@ class rorschach_exampleUITests: XCTestCase {
         secondView = SecondView(app: app)
     }
 
-    func test_example_plain() throws {
+    func test_canNavigateToSecondView() throws {
         expect {
             Given {
                 firstView?.becomeInitialView()
@@ -35,7 +35,7 @@ class rorschach_exampleUITests: XCTestCase {
         }
     }
 
-    func test_example_complex() throws {
+    func test_showsSameRandomCharacter() throws {
         var character: String?
 
         expect {
