@@ -1,5 +1,5 @@
 //
-//  rorschach_exampleUITests.swift
+//  SampleUITests.swift
 //  rorschach-exampleUITests
 //
 //  Created by Martin Kim Dung-Pham on 01.05.21.
@@ -8,7 +8,7 @@
 import XCTest
 import Rorschach
 
-class rorschach_exampleUITests: XCTestCase {
+class SampleUITests: XCTestCase {
 
     let app = XCUIApplication()
     var firstView: FirstView?
@@ -21,7 +21,7 @@ class rorschach_exampleUITests: XCTestCase {
         secondView = SecondView(app: app)
     }
 
-    func test_example_plain() throws {
+    func test_canNavigateToSecondView() throws {
         expect {
             Given {
                 firstView?.becomeInitialView()
@@ -35,7 +35,7 @@ class rorschach_exampleUITests: XCTestCase {
         }
     }
 
-    func test_example_complex() throws {
+    func test_showsSameRandomCharacter() throws {
         var character: String?
 
         expect {
