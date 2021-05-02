@@ -13,7 +13,7 @@
 		3B8FBF82263D8A190041E7F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8FBF81263D8A190041E7F1 /* Assets.xcassets */; };
 		3B8FBF85263D8A190041E7F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8FBF84263D8A190041E7F1 /* Preview Assets.xcassets */; };
 		3B8FBF90263D8A190041E7F1 /* rorschach_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF8F263D8A190041E7F1 /* rorschach_exampleTests.swift */; };
-		3B8FBF9B263D8A190041E7F1 /* rorschach_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF9A263D8A190041E7F1 /* rorschach_exampleUITests.swift */; };
+		3B8FBF9B263D8A190041E7F1 /* SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF9A263D8A190041E7F1 /* SampleUITests.swift */; };
 		3B8FBFAC263DD41F0041E7F1 /* SecondContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBFAB263DD41F0041E7F1 /* SecondContentView.swift */; };
 		3B8FBFAE263DDB330041E7F1 /* PageObjectModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBFAD263DDB330041E7F1 /* PageObjectModels.swift */; };
 /* End PBXBuildFile section */
@@ -46,7 +46,7 @@
 		3B8FBF8F263D8A190041E7F1 /* rorschach_exampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rorschach_exampleTests.swift; sourceTree = "<group>"; };
 		3B8FBF91263D8A190041E7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B8FBF96263D8A190041E7F1 /* rorschach-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rorschach-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B8FBF9A263D8A190041E7F1 /* rorschach_exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rorschach_exampleUITests.swift; sourceTree = "<group>"; };
+		3B8FBF9A263D8A190041E7F1 /* SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUITests.swift; sourceTree = "<group>"; };
 		3B8FBF9C263D8A190041E7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B8FBFAB263DD41F0041E7F1 /* SecondContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContentView.swift; sourceTree = "<group>"; };
 		3B8FBFAD263DDB330041E7F1 /* PageObjectModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageObjectModels.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		3B8FBF99263D8A190041E7F1 /* rorschach-exampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3B8FBF9A263D8A190041E7F1 /* rorschach_exampleUITests.swift */,
+				3B8FBF9A263D8A190041E7F1 /* SampleUITests.swift */,
 				3B8FBFAD263DDB330041E7F1 /* PageObjectModels.swift */,
 				3B8FBF9C263D8A190041E7F1 /* Info.plist */,
 			);
@@ -303,7 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B8FBF9B263D8A190041E7F1 /* rorschach_exampleUITests.swift in Sources */,
+				3B8FBF9B263D8A190041E7F1 /* SampleUITests.swift in Sources */,
 				3B8FBFAE263DDB330041E7F1 /* PageObjectModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

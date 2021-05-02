@@ -1,5 +1,5 @@
 //
-//  rorschach_exampleUITests.swift
+//  SampleUITests.swift
 //  rorschach-exampleUITests
 //
 //  Created by Martin Kim Dung-Pham on 01.05.21.
@@ -8,7 +8,7 @@
 import XCTest
 import Rorschach
 
-class rorschach_exampleUITests: XCTestCase {
+class SampleUITests: XCTestCase {
 
     let app = XCUIApplication()
     var firstView: FirstView?

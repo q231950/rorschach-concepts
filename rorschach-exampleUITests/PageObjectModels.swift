@@ -45,13 +45,13 @@ struct SecondView: PageObjectModel {
     let app: XCUIApplication
 
     func isVisible() -> Assertion {
-        Assertion("I can see the second screen") {
+        Assertion("I can see that second view") {
             XCTAssertTrue(app.staticTexts["Second View"].waitForExistence(timeout: 1))
         }
     }
 
     func showsRandomCharacter(_ character: String?) -> Assertion {
-        Assertion("I can see the random character (\(character ?? ""))") {
+        Assertion("I can see that random character (\(character ?? ""))") {
             XCTAssertTrue(app.staticTexts["random: \(character ?? "")"].waitForExistence(timeout: 1))
         }
     }
