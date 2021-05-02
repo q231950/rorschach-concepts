@@ -13,14 +13,31 @@ struct FirstContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: SecondContentView(), tag: Selection.Tag.second, selection: $selection) { EmptyView() }
+                NavigationLink(destination: SecondContentView(randomElement), tag: Selection.Tag.second, selection: $selection) { EmptyView() }
+                randomElementView
                 Button("Navigate to Second View") {
                     self.selection = Selection.Tag.second
                 }
+                .padding()
             }
             .navigationBarTitle("First View")
         }
     }
+
+    private var randomElementView: some View {
+        VStack {
+            Spacer()
+            HStack {
+                Text("Random Element: ")
+                Text(randomElement)
+                    .accessibility(identifier: "random")
+            }
+            Spacer()
+        }
+        .padding()
+    }
+
+    private let randomElement: String = ["a", "b", "c"].randomElement() ?? ""
 }
 
 fileprivate enum Selection {
@@ -30,7 +47,7 @@ fileprivate enum Selection {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct FirstContentView_Previews: PreviewProvider {
     static var previews: some View {
         FirstContentView()
     }

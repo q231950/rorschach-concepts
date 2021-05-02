@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "rorschach",
+        "repositoryURL": "git@github.com:q231950/rorschach.git",
+        "state": {
+          "branch": "optional-steps",
+          "revision": "8f3049f62f62000944a1eca3bdbfca6f17a17aca",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

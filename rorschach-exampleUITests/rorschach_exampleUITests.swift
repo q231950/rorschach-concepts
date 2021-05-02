@@ -11,20 +11,43 @@ import Rorschach
 class rorschach_exampleUITests: XCTestCase {
 
     let app = XCUIApplication()
+    var firstView: FirstView?
+    var secondView: SecondView?
 
-    func testExample() throws {
-        let firstView = FirstView(app: app)
-        let secondView = SecondView(app: app)
+    override func setUpWithError() throws {
+        try super.setUpWithError()
+
+        firstView = FirstView(app: app)
+        secondView = SecondView(app: app)
+    }
+
+    func test_example_plain() throws {
+        expect {
+            Given {
+                firstView?.becomeInitialView()
+            }
+            When {
+                firstView?.navigateToSecondView()
+            }
+            Then {
+                secondView?.isVisible()
+            }
+        }
+    }
+
+    func test_example_complex() throws {
+        var character: String?
 
         expect {
             Given {
-                firstView.becomeInitialView()
+                firstView?.becomeInitialView()
+                firstView?.findRandomCharacter { character = $0 }
             }
             When {
-                firstView.navigateToSecondView()
+                firstView?.navigateToSecondView()
             }
             Then {
-                secondView.isVisible()
+                secondView?.showsRandomCharacter(character)
             }
         }
     }

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1975C0263F03A000B94AA8 /* Rorschach in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1975BF263F03A000B94AA8 /* Rorschach */; };
 		3B8FBF7E263D8A180041E7F1 /* rorschach_exampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF7D263D8A180041E7F1 /* rorschach_exampleApp.swift */; };
 		3B8FBF80263D8A180041E7F1 /* FirstContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF7F263D8A180041E7F1 /* FirstContentView.swift */; };
 		3B8FBF82263D8A190041E7F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8FBF81263D8A190041E7F1 /* Assets.xcassets */; };
 		3B8FBF85263D8A190041E7F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8FBF84263D8A190041E7F1 /* Preview Assets.xcassets */; };
 		3B8FBF90263D8A190041E7F1 /* rorschach_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF8F263D8A190041E7F1 /* rorschach_exampleTests.swift */; };
 		3B8FBF9B263D8A190041E7F1 /* rorschach_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBF9A263D8A190041E7F1 /* rorschach_exampleUITests.swift */; };
-		3B8FBFAA263D8A6F0041E7F1 /* Rorschach in Frameworks */ = {isa = PBXBuildFile; productRef = 3B8FBFA9263D8A6F0041E7F1 /* Rorschach */; };
 		3B8FBFAC263DD41F0041E7F1 /* SecondContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBFAB263DD41F0041E7F1 /* SecondContentView.swift */; };
 		3B8FBFAE263DDB330041E7F1 /* PageObjectModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FBFAD263DDB330041E7F1 /* PageObjectModels.swift */; };
 /* End PBXBuildFile section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B8FBFAA263D8A6F0041E7F1 /* Rorschach in Frameworks */,
+				3B1975C0263F03A000B94AA8 /* Rorschach in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +87,7 @@
 				3B8FBF8E263D8A190041E7F1 /* rorschach-exampleTests */,
 				3B8FBF99263D8A190041E7F1 /* rorschach-exampleUITests */,
 				3B8FBF7B263D8A180041E7F1 /* Products */,
+				3BD67522263ED5FE004E8ECB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +141,13 @@
 			path = "rorschach-exampleUITests";
 			sourceTree = "<group>";
 		};
+		3BD67522263ED5FE004E8ECB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +164,8 @@
 			dependencies = (
 			);
 			name = "rorschach-example";
+			packageProductDependencies = (
+			);
 			productName = "rorschach-example";
 			productReference = 3B8FBF7A263D8A180041E7F1 /* rorschach-example.app */;
 			productType = "com.apple.product-type.application";
@@ -193,7 +203,7 @@
 			);
 			name = "rorschach-exampleUITests";
 			packageProductDependencies = (
-				3B8FBFA9263D8A6F0041E7F1 /* Rorschach */,
+				3B1975BF263F03A000B94AA8 /* Rorschach */,
 			);
 			productName = "rorschach-exampleUITests";
 			productReference = 3B8FBF96263D8A190041E7F1 /* rorschach-exampleUITests.xctest */;
@@ -231,7 +241,7 @@
 			);
 			mainGroup = 3B8FBF71263D8A180041E7F1;
 			packageReferences = (
-				3B8FBFA8263D8A6F0041E7F1 /* XCRemoteSwiftPackageReference "rorschach" */,
+				3B1975BE263F03A000B94AA8 /* XCRemoteSwiftPackageReference "rorschach" */,
 			);
 			productRefGroup = 3B8FBF7B263D8A180041E7F1 /* Products */;
 			projectDirPath = "";
@@ -594,20 +604,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3B8FBFA8263D8A6F0041E7F1 /* XCRemoteSwiftPackageReference "rorschach" */ = {
+		3B1975BE263F03A000B94AA8 /* XCRemoteSwiftPackageReference "rorschach" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/q231950/rorschach.git";
+			repositoryURL = "git@github.com:q231950/rorschach.git";
 			requirement = {
-				branch = main;
+				branch = "optional-steps";
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3B8FBFA9263D8A6F0041E7F1 /* Rorschach */ = {
+		3B1975BF263F03A000B94AA8 /* Rorschach */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3B8FBFA8263D8A6F0041E7F1 /* XCRemoteSwiftPackageReference "rorschach" */;
+			package = 3B1975BE263F03A000B94AA8 /* XCRemoteSwiftPackageReference "rorschach" */;
 			productName = Rorschach;
 		};
 /* End XCSwiftPackageProductDependency section */
